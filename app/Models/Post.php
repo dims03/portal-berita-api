@@ -21,7 +21,7 @@ class Post extends Model
      *
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
-    public function writer(): BelongsToTo
+    public function writer(): BelongsTo
     {
         return $this->belongsTo(User::class, 'author', 'id');
     }
